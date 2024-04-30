@@ -43,7 +43,7 @@ jobs:
             tinytex: true # required for beamer
 
         - name: Add extension directly into demos
-          working-directory: ./demos
+          working-directory: ./docs/demos
           run: |        
             quarto add --no-prompt coatless-quarto/stanford
 
