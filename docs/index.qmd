@@ -23,8 +23,8 @@ This will install the extension and create an example qmd file that you can use 
 
 For each format, there is a template file available. See:
 
-- **Beamer:** [Slide Demo](assets/template-beamer.pdf) ([Source](https://github.com/coatless-quarto/stanford/blob/main/asset-generation/template-beamer.qmd))
-- **HTML:** [HTML Page Demo](assets/template-html.html) ([Source](https://github.com/coatless-quarto/stanford/blob/main/asset-generation/template-html.qmd))
+- **Beamer:** [Slide Demo](demos/template-beamer.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-beamer.qmd))
+- **HTML:** [HTML Page Demo](demos/template-html.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-html.qmd))
 
 ## Acknowledgements
 

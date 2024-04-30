@@ -2,9 +2,10 @@
 
 The `stanford` Quarto theme extension provides **unofficial** Stanford University theming for Quarto documents. 
 
-:::{.callout-note}
-This extension was made for a guest lecture inside of STATS 352 to show the versatility of Quarto.
-:::
+> [!NOTE]
+>
+> This extension was made for a guest lecture inside of STATS 352 to show the versatility of Quarto.
+>
 
 ## Installing
 
@@ -18,9 +19,8 @@ This will install the extension and create an example qmd file that you can use 
 
 For each format, there is a template file available. See:
 
-- **Beamer:** [Slide Demo](assets/template-beamer.pdf) ([Source](https://github.com/coatless-quarto/stanford/blob/main/asset-generation/template-beamer.qmd))
-- **HTML:** [HTML Page Demo](assets/template-html.html) ([Source](https://github.com/coatless-quarto/stanford/blob/main/asset-generation/template-html.qmd))
-
+- **Beamer:** [Slide Demo](docs/demos/template-beamer.qmd) ([Source](https://quarto.thecoatlessprofessor.com/stanford/demos/template-beamer.pdf))
+- **HTML:** [HTML Page Demo](docs/demos/template-html.qmd) ([Source](https://quarto.thecoatlessprofessor.com/stanford/demos/template-html.html))
 ## Acknowledgements
 
 ### Beamer Acknowledgements 

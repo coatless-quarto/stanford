@@ -1,0 +1,19 @@
+---
+title: "Example HTML Page"
+subtitle: "Let's rock and roll!"
+date: now
+author:
+  - name: FirstName LastName
+    email: person@stanford.edu
+format:
+  stanford-revealjs: default
+---
+
+## Slide with banner title
+
+I would like:
+
+- The title to appear where it currently appears
+
+- But the grey background rectangle to extend all the way to the left, right, and top of the slide.
+
