@@ -33,6 +33,7 @@ jobs:
               any::rmarkdown
               any::downlit
               any::xml2
+              any::ggplot2
 
       # Back to our regularly scheduled Quarto output
         - name: "Set up Quarto"
