@@ -10,9 +10,10 @@ This will install the extension and create an example qmd file that you can use 
 
 ## Example
 
-There are a couple different template files for each format. See:
+For each format, there is a template file available. See:
 
 - **Beamer:** [template-beamer.qmd](template-beamer.qmd)
+- **HTML:** [template-html.qmd](template-html.qmd)
 
 ## Acknowledgements
 
