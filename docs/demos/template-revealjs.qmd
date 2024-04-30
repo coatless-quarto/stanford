@@ -9,9 +9,33 @@ format:
   stanford-revealjs: default
 ---
 
-## Slide with title
+## Welcome to the presentation.
 
-Hello there! Welcome to the presentation.
+Some quick house keeping notes for those new to RevealJS
+
+### Navigation With keyboards
+
+To move between slides in the presentation, please use: 
+
+- next slide: spacebar, `j`, or right arrow
+- previous slide: `k` or left arrow
+
+### Tools
+
+- menu bar for options: `m`
+- overview of slides: `o`
+- zoom element: `alt` (windows) or `option` (mac)
+- [print slides](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf)
+
+## Chalkboard
+
+This slide theme using [reveal-js.calkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) plugin to allow for annotations. See [Quarto documentation](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard) for supported options. Note, the following keyboard short cuts:
+
+- notes: `c`
+- chalkboard: `b`
+- delete drawing: `del`
+- download drawing: `d`
+
 
 ## Slide with some mathematics
 
@@ -21,16 +45,22 @@ $$a^2 = b^2 + c^2$$
 
 Inline: $\frac{a+b}{a} = \frac{a}{b} = \varphi$
 
-## Slide with lists
+## Slide with lists that increment
 
+Below is a list that as you move forward the items are displayed. 
+
+::: {.incremental}
 - Hello there!
   1. Yogurt
   2. Flank steak
 - Goodbye! 
+:::
+
 
 ## Some quick R
 
-Example R code: 
+Example R code:
+
 ```{r}
 1 + 1
 ```
