@@ -20,7 +20,9 @@ To move between slides in the presentation, please use:
 - next slide: spacebar, `j`, or right arrow
 - previous slide: `k` or left arrow
 
-### Tools
+## RevealJS Tools
+
+Some other common tasks with RevealJS:
 
 - menu bar for options: `m`
 - overview of slides: `o`
