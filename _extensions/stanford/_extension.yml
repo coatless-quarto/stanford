@@ -32,6 +32,17 @@ contributes:
         - beamer/title.tex
         - beamer/before-body.tex
     revealjs:
-      theme: [dark, custom.scss]
-      logo: logo.svg
+      date-format: long
+      overview: true
+      progress: true
+      touch: true
+      chalkboard: true
+      execute:
+        echo: true
+      title-slide-attributes:
+        data-background-image: logos/stanford-logo-faded-tree.png
+        data-background-size: contain
+        data-background-opacity: 100
+      theme: [default, revealjs/custom.scss]
+      logo: logos/stanford-watermark-white.svg
 
