@@ -1,0 +1,26 @@
+project:
+  type: website
+  resources:
+   - assets/*
+
+website:
+  title: "stanford"
+  reader-mode: true
+  repo-url: https://github.com/coatless-quarto/stanford/
+  repo-actions: [edit, issue]
+  sidebar:
+    style: "floating"
+    search: true
+    tools:
+      - icon: github
+        href: https://github.com/coatless-quarto/stanford/
+    contents: 
+      - text: "Home"
+        file: index.qmd
+      - section: "Extra"
+        contents:
+        - qstanford-release-notes.qmd
+
+format: 
+  html:
+    toc: true

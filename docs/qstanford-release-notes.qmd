@@ -1,0 +1,17 @@
+---
+title: "Release Notes"
+date: "04-25-2024"
+date-modified: last-modified
+engine: markdown
+format: 
+  html:
+    toc: true
+---
+
+# 0.0.0-dev.1: ??? (??-??-????)
+
+## Features
+
+- An **unofficial** Quarto theme extension for Stanford University. 
+  - `html`: An HTML-themed Stanford webpage.
+  - `beamer`: A Beamer-themed Stanford slide deck based on [Sanha Cheong's Beamer Theme](https://github.com/sanhacheong/stanford-beamer-presentation). 
