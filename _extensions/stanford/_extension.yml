@@ -4,6 +4,16 @@ version: 0.0.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
+    html:
+      # html-specifc
+    beamer: 
+      include-in-header: 
+        - beamer/front-matter.tex
+      # Override pandoc defaults to obtain the correct title slide
+      # and author information.
+      template-partials:
+        - beamer/title.tex
+        - beamer/before-body.tex
     revealjs:
       theme: [dark, custom.scss]
       logo: logo.svg
