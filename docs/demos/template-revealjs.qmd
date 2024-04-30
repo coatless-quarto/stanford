@@ -1,6 +1,6 @@
 ---
-title: "Example HTML Page"
-subtitle: "Let's rock and roll!"
+title: "Example RevealJS Slides"
+subtitle: "Let's Rock and Roll!"
 date: now
 author:
   - name: FirstName LastName
@@ -9,11 +9,32 @@ format:
   stanford-revealjs: default
 ---
 
-## Slide with banner title
+## Slide with title
 
-I would like:
+Hello there! Welcome to the presentation.
 
-- The title to appear where it currently appears
+## Slide with some mathematics
 
-- But the grey background rectangle to extend all the way to the left, right, and top of the slide.
+Display: 
 
+$$a^2 = b^2 + c^2$$
+
+Inline: $\frac{a+b}{a} = \frac{a}{b} = \varphi$
+
+## Slide with lists
+
+- Hello there!
+  1. Yogurt
+  2. Flank steak
+- Goodbye! 
+
+## Some quick R
+
+Example R code: 
+```{r}
+1 + 1
+```
+
+```{r}
+plot(pressure)
+```
