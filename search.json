@@ -1,27 +1,5 @@
 [
   {
-    "objectID": "qstanford-release-notes.html",
-    "href": "qstanford-release-notes.html",
-    "title": "Release Notes",
-    "section": "",
-    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
-  },
-  {
-    "objectID": "qstanford-release-notes.html#features",
-    "href": "qstanford-release-notes.html#features",
-    "title": "Release Notes",
-    "section": "",
-    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -46,7 +24,7 @@
     "href": "index.html#example",
     "title": "Home",
     "section": "Example",
-    "text": "Example\nFor each format, there is a template file available. See:\n\nBeamer: Slide Demo (Source)\nHTML: HTML Page Demo (Source)",
+    "text": "Example\nFor each format, there is a template file available. See:\n\nRevealJS: RevealJS Slide Demo (Source)\nBeamer: Slide Demo (Source)\nHTML: HTML Page Demo (Source)",
     "crumbs": [
       "Home"
     ]
@@ -60,5 +38,69 @@
     "crumbs": [
       "Home"
     ]
+  },
+  {
+    "objectID": "demos/template-revealjs.html#welcome-to-the-presentation.",
+    "href": "demos/template-revealjs.html#welcome-to-the-presentation.",
+    "title": "Example RevealJS Slides",
+    "section": "Welcome to the presentation.",
+    "text": "Welcome to the presentation.\nSome quick house keeping notes for those new to RevealJS\nNavigation With keyboards\nTo move between slides in the presentation, please use:\n\nnext slide: spacebar, j, or right arrow\nprevious slide: k or left arrow\n\nTools\n\nmenu bar for options: m\noverview of slides: o\nzoom element: alt (windows) or option (mac)\nprint slides"
+  },
+  {
+    "objectID": "demos/template-revealjs.html#chalkboard",
+    "href": "demos/template-revealjs.html#chalkboard",
+    "title": "Example RevealJS Slides",
+    "section": "Chalkboard",
+    "text": "Chalkboard\nThis slide theme using reveal-js.calkboard plugin to allow for annotations. See Quarto documentation for supported options. Note, the following keyboard short cuts:\n\nnotes: c\nchalkboard: b\ndelete drawing: del\ndownload drawing: d"
+  },
+  {
+    "objectID": "demos/template-revealjs.html#slide-with-some-mathematics",
+    "href": "demos/template-revealjs.html#slide-with-some-mathematics",
+    "title": "Example RevealJS Slides",
+    "section": "Slide with some mathematics",
+    "text": "Slide with some mathematics\nDisplay:\n\\[a^2 = b^2 + c^2\\]\nInline: \\(\\frac{a+b}{a} = \\frac{a}{b} = \\varphi\\)"
+  },
+  {
+    "objectID": "demos/template-revealjs.html#slide-with-lists-that-increment",
+    "href": "demos/template-revealjs.html#slide-with-lists-that-increment",
+    "title": "Example RevealJS Slides",
+    "section": "Slide with lists that increment",
+    "text": "Slide with lists that increment\nBelow is a list that as you move forward the items are displayed.\n\n\nHello there!\n\nYogurt\nFlank steak\n\nGoodbye!"
+  },
+  {
+    "objectID": "demos/template-revealjs.html#some-quick-r",
+    "href": "demos/template-revealjs.html#some-quick-r",
+    "title": "Example RevealJS Slides",
+    "section": "Some quick R",
+    "text": "Some quick R\nExample R code:\n\n1 + 1\n\n[1] 2\n\n\n\nplot(pressure)"
+  },
+  {
+    "objectID": "qstanford-release-notes.html",
+    "href": "qstanford-release-notes.html",
+    "title": "Release Notes",
+    "section": "",
+    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
+    "objectID": "qstanford-release-notes.html#features",
+    "href": "qstanford-release-notes.html#features",
+    "title": "Release Notes",
+    "section": "",
+    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
+    "objectID": "demos/template-html.html",
+    "href": "demos/template-html.html",
+    "title": "Example HTML Page",
+    "section": "",
+    "text": "Consider the mpg data set found in the ggplot2 package. In this data set, there are 234 observations and 11 variables.\nThe plots in Figure 1 show the relationship between city and highway mileage for 38 popular models of cars. In Figure 1 (a) the points are colored by the number of cylinders while in Figure 1 (b) the points are colored by engine displacement.\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()\n\n\n\nFigure 1: City and highway mileage for 38 popular models of cars.\n\n\n\n\n\n\n\n(a) Color by number of cylinders\n\n\n\n\n\n\n\n\n\n\n\n(b) Color by engine displacement, in liters\n\n\n\n\n\n\n\n\n\n\n\nExample mirrored from:\nhttps://quarto.org/docs/get-started/computations/rstudio.html#multiple-figures"
   }
 ]
