@@ -44,7 +44,14 @@
     "href": "demos/template-revealjs.html#welcome-to-the-presentation.",
     "title": "Example RevealJS Slides",
     "section": "Welcome to the presentation.",
-    "text": "Welcome to the presentation.\nSome quick house keeping notes for those new to RevealJS\nNavigation With keyboards\nTo move between slides in the presentation, please use:\n\nnext slide: spacebar, j, or right arrow\nprevious slide: k or left arrow\n\nTools\n\nmenu bar for options: m\noverview of slides: o\nzoom element: alt (windows) or option (mac)\nprint slides"
+    "text": "Welcome to the presentation.\nSome quick house keeping notes for those new to RevealJS\nNavigation With keyboards\nTo move between slides in the presentation, please use:\n\nnext slide: spacebar, j, or right arrow\nprevious slide: k or left arrow"
+  },
+  {
+    "objectID": "demos/template-revealjs.html#revealjs-tools",
+    "href": "demos/template-revealjs.html#revealjs-tools",
+    "title": "Example RevealJS Slides",
+    "section": "RevealJS Tools",
+    "text": "RevealJS Tools\nSome other common tasks with RevealJS:\n\nmenu bar for options: m\noverview of slides: o\nzoom element: alt (windows) or option (mac)\nprint slides"
   },
   {
     "objectID": "demos/template-revealjs.html#chalkboard",
