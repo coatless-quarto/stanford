@@ -42,6 +42,11 @@ jobs:
             version: "pre-release"
             tinytex: true # required for beamer
 
+        - name: Add extension directly into demos
+          working-directory: ./demos
+          run: |        
+            quarto add --no-prompt coatless-quarto/stanford
+
         - name: Publish to GitHub Pages (and render)
           uses: quarto-dev/quarto-actions/publish@v2
           with:
