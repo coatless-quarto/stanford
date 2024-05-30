@@ -26,7 +26,7 @@ For each format, there is a template file available. See:
 - **RevealJS:** [RevealJS Slide Demo](demos/template-revealjs.qmd) ([Source](https://quarto.thecoatlessprofessor.com/stanford/demos/template-revealjs.html))
 - **HTML:** [HTML Page Demo](demos/template-html.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-html.qmd))
 - **Beamer:** [Slide Demo](demos/template-beamer.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-beamer.qmd))
-- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](demos/template-lor-pdf.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-lor-pdf.pdf))
+- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](demos/template-lor-pdf.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-lor-pdf.qmd))
 
 ## Acknowledgements
 
