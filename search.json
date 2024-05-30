@@ -1,5 +1,27 @@
 [
   {
+    "objectID": "qstanford-release-notes.html",
+    "href": "qstanford-release-notes.html",
+    "title": "Release Notes",
+    "section": "",
+    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
+    "objectID": "qstanford-release-notes.html#features",
+    "href": "qstanford-release-notes.html#features",
+    "title": "Release Notes",
+    "section": "",
+    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -80,28 +102,6 @@
     "title": "Example RevealJS Slides",
     "section": "Some quick R",
     "text": "Some quick R\nExample R code:\n\n1 + 1\n\n[1] 2\n\n\n\nplot(pressure)"
-  },
-  {
-    "objectID": "qstanford-release-notes.html",
-    "href": "qstanford-release-notes.html",
-    "title": "Release Notes",
-    "section": "",
-    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
-  },
-  {
-    "objectID": "qstanford-release-notes.html#features",
-    "href": "qstanford-release-notes.html#features",
-    "title": "Release Notes",
-    "section": "",
-    "text": "An unofficial Quarto theme extension for Stanford University.\n\nhtml: An HTML-themed Stanford webpage.\nbeamer: A Beamer-themed Stanford slide deck based on Sanha Cheong’s Beamer Theme.",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
   },
   {
     "objectID": "demos/template-html.html",
