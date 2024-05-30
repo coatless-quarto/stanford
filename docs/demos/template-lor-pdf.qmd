@@ -1,0 +1,39 @@
+---
+title: "Example Letter of Recommendation"
+subtitle: "Let's rock and roll!"
+date: now
+date-format: long
+author: AuthorFirstName AuthorLastName
+phone: +1 (650) 723-2625
+email: person@stanford.edu
+return-address: 
+- Department of Statistics
+- 390 Jane Stanford Way
+- Stanford University
+- Stanford, CA 94305 USA
+to-address:
+- FirstName LastName
+- 123 Sunset Blvd
+- Sunnyvale, CA
+opening:
+- Dear FirstName,
+closing:
+- Sincerely,
+engine: knitr
+format:
+  stanford-pdf+lor: default
+---
+
+I am writing to offer my enthusiastic recommendation for [Candidate's Name]. I have had the pleasure of working closely with [him/her/them] for [duration of your professional relationship], and throughout this time, [he/she/they] have consistently impressed me with [his/her/their] dedication, intelligence, and professionalism.
+
+During [his/her/their] time with [your organization/institution], [Candidate's Name] has demonstrated exceptional [skills/qualities/attributes] that make [him/her/them] an outstanding candidate for [specific opportunity or program]. [He/She/They] have [examples of specific accomplishments, projects, or initiatives], which showcase [his/her/their] ability to [highlight relevant skills or characteristics].
+
+Not only is [Candidate's Name] highly competent in [his/her/their] field, but [he/she/they] also possess a strong work ethic and excellent interpersonal skills. [He/She/They] consistently collaborate effectively with colleagues and stakeholders, demonstrating leadership and teamwork abilities that are truly commendable.
+
+In addition to [his/her/their] professional abilities, [Candidate's Name] is a person of integrity and character. [He/She/They] approach [his/her/their] work with honesty, humility, and a genuine desire to make a positive impact.
+
+Based on [his/her/their] exceptional performance and character, I am confident that [Candidate's Name] will excel in any endeavor [he/she/they] pursue. [He/She/They] have my highest recommendation without reservation.
+
+Please feel free to contact me if you require any further information or if you have any questions regarding [Candidate's Name]. I am more than happy to provide additional insights.
+
+Thank you for considering [Candidate's Name] for [specific opportunity or program]. I wholeheartedly endorse [him/her/them] and believe [he/she/they] will be a valuable asset to [your organization/institution].
