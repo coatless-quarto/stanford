@@ -19,7 +19,7 @@ This will install the extension and create an example qmd file that you can use 
 
 For each format, there is a template file available. See:
 
-- **RevealJS:** [RevealJS Slide Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-html.html) ([Source](docs/demos/template-revealjs.qmd))
+- **RevealJS:** [RevealJS Slide Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-revealjs.html) ([Source](docs/demos/template-revealjs.qmd))
 - **Beamer:** [Slide Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-beamer.pdf) ([Source](docs/demos/template-beamer.qmd))
 - **HTML:** [HTML Page Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-html.html) ([Source](docs/demos/template-html.qmd))
 
