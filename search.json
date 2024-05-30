@@ -46,7 +46,7 @@
     "href": "index.html#example",
     "title": "Home",
     "section": "Example",
-    "text": "Example\nFor each format, there is a template file available. See:\n\nRevealJS: RevealJS Slide Demo (Source)\nBeamer: Slide Demo (Source)\nHTML: HTML Page Demo (Source)",
+    "text": "Example\nFor each format, there is a template file available. See:\n\nRevealJS: RevealJS Slide Demo (Source)\nHTML: HTML Page Demo (Source)\nBeamer: Slide Demo (Source)\nPDF Letter of Recommendation (LOR): PDF LOR Demo (Source)",
     "crumbs": [
       "Home"
     ]
