@@ -1,6 +1,5 @@
 ---
 title: "Example Letter of Recommendation"
-subtitle: "Let's rock and roll!"
 date: now
 date-format: long
 author: AuthorFirstName AuthorLastName
