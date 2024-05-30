@@ -26,7 +26,7 @@ For each format, there is a template file available. See:
 - **RevealJS:** [RevealJS Slide Demo](demos/template-revealjs.qmd) ([Source](https://quarto.thecoatlessprofessor.com/stanford/demos/template-revealjs.html))
 - **HTML:** [HTML Page Demo](demos/template-html.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-html.qmd))
 - **Beamer:** [Slide Demo](demos/template-beamer.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-beamer.qmd))
-- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](demos/template-pdf+lor.qmd) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-pdf+lor.qmd))
+- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](demos/template-pdf-lor+lor.pdf) ([Source](https://github.com/coatless-quarto/stanford/blob/main/docs/demos/template-pdf-lor.qmd))
 
 ## Acknowledgements
 
@@ -40,3 +40,4 @@ There was a prior work attempt at packaging the theme into a Quarto extension.
 
 - <https://github.com/eLearningHub/quarto-stanford-presentation-starter>
 
+[PDF (LOR)](demos/template-pdf-lor.qmd){style="display:none;"}

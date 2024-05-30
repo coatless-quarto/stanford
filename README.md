@@ -22,7 +22,7 @@ For each format, there is a template file available. See:
 - **RevealJS:** [RevealJS Slide Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-revealjs.html) ([Source](docs/demos/template-revealjs.qmd))
 - **HTML:** [HTML Page Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-html.html) ([Source](docs/demos/template-html.qmd))
 - **Beamer:** [Beamer Slide Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-beamer.pdf) ([Source](docs/demos/template-beamer.qmd))
-- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-pdf+lor.pdf) ([Source](docs/demos/template-pdf+lor.qmd))
+- **PDF Letter of Recommendation (LOR):** [PDF LOR Demo](https://quarto.thecoatlessprofessor.com/stanford/demos/template-pdf-lor+lor.pdf) ([Source](docs/demos/template-pdf-lor.qmd))
 
 ## Acknowledgements
 
