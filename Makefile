@@ -1,14 +1,17 @@
-.PHONY: asset-html asset-beamer asset-revealjs assets help
+.PHONY: asset-html asset-beamer asset-revealjs asset-pdf-lor assets help
 .DEFAULT_GOAL := help
 
 asset-html: ## Render HTML Webpage
-	quarto render docs/demo/template-html.qmd --output-dir assets
+	quarto render docs/demos/template-html.qmd --output-dir assets
 
 asset-beamer: ## Render Beamer Slides
-	quarto render docs/demo/template-beamer.qmd --output-dir assets
+	quarto render docs/demos/template-beamer.qmd --output-dir assets
 
 asset-revealjs: ## Render RevealJS Slides
-	quarto render docs/demo/template-revealjs.qmd --output-dir assets
+	quarto render docs/demos/template-revealjs.qmd --output-dir assets
+
+asset-pdf-lor: ## Render HTML Webpage
+	quarto render docs/demos/template-lor-pdf.qmd --output-dir assets
 
 assets:	asset-beamer asset-html asset-revealjs  ## Render all assets
 
