@@ -1,0 +1,108 @@
+\documentclass[10pt,stdletter,dateno]{newlfm}
+
+$pandoc.tex()$
+
+\usepackage{charter}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{bbding}
+\usepackage{soul}
+
+\makeatletter
+\g@addto@macro{\ps@ltrhead}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\g@addto@macro{\ps@othhead}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\makeatother
+
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={}, 
+    pdfkeywords={},
+    colorlinks=false,       % disable link border color
+    allbordercolors=white   % set white border color
+}
+
+\dateset{ }                 % remove date stamp
+\widowpenalty=1000
+\clubpenalty=1000
+
+% Define a box for the letter head
+\newsavebox{\Lstanford}
+\sbox{\Lstanford}{%
+	\parbox[b]{2in}{%
+		\vspace{-1in}%
+		\includegraphics[height=2in]{stanford_logo_2}%
+		\vspace{-1in}%
+	}%
+}%
+\makeletterhead{Stanford}{\Lheader{\usebox{\Lstanford}}}
+\newcommand{\thinspacer}{\hspace{0.277778em}}
+
+\newlfmP{headermarginskip=20pt}
+\newlfmP{sigsize=0pt}
+\newlfmP{dateskipafter=20pt}
+
+% Set phone data
+$if(phone)$
+\newlfmP{addrfromphone}
+\PhrPhone{Phone}
+\phonefrom{$phone$}
+$endif$
+% Set email data if supplied
+$if(email)$
+\newlfmP{addrfromemail}
+\PhrEmail{Email}
+\emailfrom{\href{mailto:$email$}{$email$}}
+$endif$
+
+\lthStanford
+
+% Setup the author name for signature line
+\namefrom{%
+$if(author)$
+$author$
+$endif$
+}
+
+% Add the return address
+\addrfrom{%
+$if(date)$$date$$else$\today$endif$\\
+$for(return-address)$$return-address$$sep$\\$endfor$
+}
+
+% Add the to address
+\addrto{%
+\phantom{}\\
+$for(to-address)$$to-address$$sep$\\$endfor$
+}
+
+% Add an opening line
+\greetto{
+$if(opening)$
+$opening$
+$endif$
+}
+
+% Add a closing line
+\closeline{%
+$if(closing)$
+$closing$%
+$endif$%
+}
+\begin{document} 
+\begin{newlfm}
+
+% Move markdown body into the document
+$body$
+
+\end{newlfm}
+\end{document}
+

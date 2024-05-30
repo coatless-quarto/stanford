@@ -4,6 +4,10 @@ version: 0.0.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
+    pdf+lor: 
+      template: pdf-lor/template.tex
+      format-resources:
+       - logos/stanford_logo_2.png
     html:
       mainfont: Roboto
       sansfont: Source Sans 3
