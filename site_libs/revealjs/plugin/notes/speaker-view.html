@@ -206,6 +206,11 @@
 					-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 				}
 
+				#speaker-layout:focus-within {
+					outline: 2px solid currentColor;
+					outline-offset: 3px;
+				}
+
 				#speaker-layout select:focus {
 					outline: none;
 					box-shadow: none;
@@ -308,10 +313,10 @@
 
 		<div id="connection-status">Loading speaker view...</div>
 
-		<div id="current-slide"></div>
-		<div id="upcoming-slide"><span class="overlay-element label">Upcoming</span></div>
+		<div id="current-slide" role="region" aria-label="Current slide"></div>
+		<div id="upcoming-slide" role="region" aria-label="Upcoming slide"><span class="overlay-element label">Upcoming</span></div>
 		<div id="speaker-controls">
-			<div class="speaker-controls-time">
+			<div class="speaker-controls-time" role="region" aria-label="Time">
 				<h4 class="label">Time <span class="reset-button">Click to Reset</span></h4>
 				<div class="clock">
 					<span class="clock-value">0:00 AM</span>
@@ -327,14 +332,14 @@
 				</div>
 			</div>
 
-			<div class="speaker-controls-notes hidden">
+			<div class="speaker-controls-notes hidden" role="region" aria-label="Speaker notes">
 				<h4 class="label">Notes</h4>
 				<div class="value"></div>
 			</div>
 		</div>
 		<div id="speaker-layout" class="overlay-element interactive">
-			<span class="speaker-layout-label"></span>
-			<select class="speaker-layout-dropdown"></select>
+			<label for="speaker-layout-dropdown" class="speaker-layout-label">Layout</label><span class="speaker-layout-value" aria-hidden="true"></span>
+			<select id="speaker-layout-dropdown" class="speaker-layout-dropdown"></select>
 		</div>
 
 		<script>
@@ -350,8 +355,9 @@
 					layoutDropdown,
 					pendingCalls = {},
 					lastRevealApiCallId = 0,
-					connected = false,
-					whitelistedWindows = [window.opener];
+					connected = false
+
+				var connectionStatus = document.querySelector( '#connection-status' );
 
 				var SPEAKER_LAYOUTS = {
 					'default': 'Default',
@@ -362,16 +368,31 @@
 
 				setupLayout();
 
-				var connectionStatus = document.querySelector( '#connection-status' );
+				let openerOrigin;
+
+				try {
+					openerOrigin = window.opener.location.origin;
+				}
+				catch ( error ) { console.warn( error ) }
+
+				// In order to prevent XSS, the speaker view will only run if its
+				// opener has the same origin as itself
+				if( window.location.origin !== openerOrigin ) {
+					connectionStatus.innerHTML = 'Cross origin error.<br>The speaker window can only be opened from the same origin.';
+					return;
+				}
+
 				var connectionTimeout = setTimeout( function() {
 					connectionStatus.innerHTML = 'Error connecting to main window.<br>Please try closing and reopening the speaker view.';
 				}, 5000 );
-;
+
 				window.addEventListener( 'message', function( event ) {
 
-					// Validate the origin of this message to prevent XSS
-					if( window.location.origin !== event.origin && whitelistedWindows.indexOf( event.source ) === -1 ) {
-						return;
+					// Validate the origin of all messages to avoid parsing messages
+					// that aren't meant for us. Ignore when running off file:// so
+					// that the speaker view continues to work without a web server.
+					if( window.location.origin !== event.origin && window.location.origin !== 'file://' ) {
+						return
 					}
 
 					clearTimeout( connectionTimeout );
@@ -503,6 +524,9 @@
 							event.preventDefault();
 							return false;
 						}
+						// Let native controls handle their own keys without advancing slides.
+						if( event.target.closest( 'input, select, textarea, button, [contenteditable]' ) ) return;
+
 						currentSlide.contentWindow.postMessage( JSON.stringify({ method: 'triggerKey', args: [ event.keyCode ] }), '*' );
 					} );
 
@@ -524,22 +548,22 @@
 
 					var urlSeparator = /\?/.test(data.url) ? '&' : '?';
 					var hash = '#/' + data.state.indexh + '/' + data.state.indexv;
-					var currentURL = data.url + urlSeparator + params + '&postMessageEvents=true' + hash;
-					var upcomingURL = data.url + urlSeparator + params + '&controls=false' + hash;
+					var currentURL = data.url + urlSeparator + params + '&scrollActivationWidth=false&postMessageEvents=true' + hash;
+					var upcomingURL = data.url + urlSeparator + params + '&scrollActivationWidth=false&controls=false' + hash;
 
 					currentSlide = document.createElement( 'iframe' );
+					currentSlide.setAttribute( 'title', 'Current slide preview' );
 					currentSlide.setAttribute( 'width', 1280 );
 					currentSlide.setAttribute( 'height', 1024 );
 					currentSlide.setAttribute( 'src', currentURL );
 					document.querySelector( '#current-slide' ).appendChild( currentSlide );
 
 					upcomingSlide = document.createElement( 'iframe' );
+					upcomingSlide.setAttribute( 'title', 'Upcoming slide preview' );
 					upcomingSlide.setAttribute( 'width', 640 );
 					upcomingSlide.setAttribute( 'height', 512 );
 					upcomingSlide.setAttribute( 'src', upcomingURL );
 					document.querySelector( '#upcoming-slide' ).appendChild( upcomingSlide );
-
-					whitelistedWindows.push( currentSlide.contentWindow, upcomingSlide.contentWindow );
 
 				}
 
@@ -764,7 +788,7 @@
 				function setupLayout() {
 
 					layoutDropdown = document.querySelector( '.speaker-layout-dropdown' );
-					layoutLabel = document.querySelector( '.speaker-layout-label' );
+					layoutLabel = document.querySelector( '.speaker-layout-value' );
 
 					// Render the list of available layouts
 					for( var id in SPEAKER_LAYOUTS ) {
@@ -794,7 +818,7 @@
 
 					var title = SPEAKER_LAYOUTS[ value ];
 
-					layoutLabel.innerHTML = 'Layout' + ( title ? ( ': ' + title ) : '' );
+					layoutLabel.textContent = title ? ( ': ' + title ) : '';
 					layoutDropdown.value = value;
 
 					document.body.setAttribute( 'data-speaker-layout', value );
