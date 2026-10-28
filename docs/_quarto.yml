@@ -20,6 +20,8 @@ website:
       - section: "Extra"
         contents:
         - qstanford-release-notes.qmd
+        - href: https://blog.thecoatlessprofessor.com/projects/stanford/
+          text: "Blog posts"
 
 format: 
   html:
